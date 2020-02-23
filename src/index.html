@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<table id="user-table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Delete</th>
+        <th>Modify</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<button id="add-item">Add product</button>
+<div id="edit-modal" class="modal">
+    <form id="new-item-form">
+        <input type="text" id="name" placeholder="Nazwa artykułu" required>
+        <input type="number" id="count" placeholder="Ilość" required>
+        <input type="number" id="price" placeholder="Cena" required>
+        <input type="file" id="item-image" accept="image/*" placeholder="Obrazek" required>
+    </form>
+</div>
+<script src="script.js" type="module"></script>
+</body>
+</html>

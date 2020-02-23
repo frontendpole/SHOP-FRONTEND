@@ -1,0 +1,100 @@
+.modal-background {
+  background-color: transparentize(lightgray, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  display: none;
+
+  &.open {
+    display: block;
+  }
+}
+
+.modal {
+  display: none;
+  z-index: 999;
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  box-shadow: 20px 20px 10px grey;
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+
+  &.open {
+    display: block;
+  }
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input {
+    margin: 15px auto;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+  }
+}
+
+.accept-button {
+  background: rgb(19, 142, 71);
+  width: 200px;
+  height: 45px;
+  color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid rgb(19, 142, 71);
+  }
+}
+
+.cancel-button {
+  background: indianred;
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  transform: translate(215%, -10%);
+  border: 1px solid white;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid indianred;
+  }
+}
